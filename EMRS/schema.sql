@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS songs;
+
+CREATE TABLE songs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    artist TEXT NOT NULL,
+    track TEXT NOT NULL,
+    genre TEXT NOT NULL,
+    lyrics TEXT NOT NULL
+);

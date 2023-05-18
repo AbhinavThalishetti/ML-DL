@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}
+    Music Recommendation system
+{% endblock %}
+{% block content %}
+<div id="content">
+    <a href="{{ url_for('recommender') }}" class="btn btn-light mb-2 border border-info">Get music recommendations</a>
+    <a href="{{ url_for('add') }}" class="btn btn-light mt-1 border border-info">Add your own music</a>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+    Add Music
+{% endblock %}
+{% block content %}
+<div class="container m-5" id="search">
+    <form method="get" action="{{ url_for('add_song') }}">
+        <div class="mb-3">
+          <label for="artist" class="form-label">Artist name : </label>
+          <input type="text" class="form-control" name="artist">
+        </div>
+        <div class="mb-3">
+            <label for="song" class="form-label">Song name : </label>
+            <input type="text" class="form-control" name="song">
+          </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+</div>
+{% endblock %}

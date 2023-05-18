@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+    Results
+{% endblock %}
+{% block content %}
+    <div class="container m-5" id="results">
+        <h3>Results :</h3>
+        <ul class="list-group list-group-numbered">
+            {% for song in ans %}
+            <li class="list-group-item d-flex justify-content-between align-items-start"><span class="ms-2 me-auto">{{ song.track }}</span>- <span>{{ song.artist }}</span> </li>
+            {% endfor %}
+          </ul>
+    </div>
+{% endblock %}

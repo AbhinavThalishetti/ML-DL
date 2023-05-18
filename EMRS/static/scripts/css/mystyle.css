@@ -1,0 +1,32 @@
+#particles-js {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#content{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 45%;
+    left: 42%;
+    background-color: rgb(255, 255, 255,1);
+    text-align: center;
+}
+
+#camera{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+}
+
+#results, #search{
+    position: absolute;
+    align-items: center;
+}
+
+#content a:hover {
+    box-shadow: 2px 2px 2px 2px rgba(110, 145, 173, 0.185);
+    transition: 100ms;
+}

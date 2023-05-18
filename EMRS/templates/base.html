@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scripts/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scripts/css/mystyle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scripts/css/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scripts/js/bootstrap.bundle.js') }}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+           <div class="alert alert-{{ category }} fade show" id="alert" role="alert">
+            <strong>{{ message }}</strong>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+        {% block content %}
+        {% endblock %}
+    <div id="particles-js">
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts/js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/js/app.js') }}"></script>
+</body>
+</html>

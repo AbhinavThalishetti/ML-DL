@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}
+    Search
+{% endblock %}
+{% block content %}
+    <div class="container m-5" id="search">
+        <form class="form-inline d-flex justify-content-center md-form form-sm" method="get" action="{{ url_for('search') }}">
+            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+              aria-label="Search" name="keyword">
+              <button type="submit" class="btn"><i class="m-2 bi bi-search" aria-hidden="true"></i></button>
+          </form>
+    </div>
+{% endblock %}

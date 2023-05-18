@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}
+    Recommender
+{% endblock %}
+{% block content %}
+<div id="content">
+<a href="{{ url_for('live_feed') }}" class="btn btn-light mb-2 border border-info">Use facial expressions to generate results</a>
+<a href="{{ url_for('word_search') }}" class="btn btn-light mt-1 border border-info">Use word search to generate results</a>
+</div>
+{% endblock %}

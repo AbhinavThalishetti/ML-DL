@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}
+    Live Feed
+{% endblock %}
+{% block content %}
+<div class="container m-5" id="camera">
+    <h3>Take a pic!</h3>
+    <img src="{{ url_for('video_feed') }}" height="80%">
+<form class="mt-3" action="{{ url_for('snap') }}" method="post">
+    <input type="submit" value="snap" name="snap">
+</form>
+</div>
+{% endblock %}
