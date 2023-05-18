@@ -1,6 +1,6 @@
 Project Title: Emotion based Music Recommendation System using Facial Recognition
 
-Follow the given steps:
+Follow the given steps to run it:
 
 
     1) Use this command and run it in command prompt in this directory, to install the requirements for the project :
