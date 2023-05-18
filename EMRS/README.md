@@ -1,6 +1,8 @@
 Project Title: Emotion based Music Recommendation System using Facial Recognition
 
 Follow the given steps:
+
+
     1) Use this command and run it in command prompt in this directory, to install the requirements for the project :
         
         > pip install -r requirements.txt
